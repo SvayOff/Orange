@@ -21,7 +21,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
 .icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
   content: "\f09a";
 }
 .icon-google-plus:before {
