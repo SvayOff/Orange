@@ -260,19 +260,47 @@
     text-align: center;
   }
   &__title {
-    font-size: 40px;
-    margin-bottom: 30px;
-
-    @include f500;
+    margin-bottom: 25px;
   }
   &__text {
-    color: #888;
     max-width: 900px;
     margin: 0 auto;
-    line-height: 30px;
   }
 }
+.title {
+  font-size: 40px;
+  @include f500;
+  line-height: 55px;
+}
+.text {
+  color: #888;
+  line-height: 30px;
+}
 // end subsequence
+
+// start design
+.design {
+  &__inner {
+    padding: 200px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__image {
+    width: 570px;
+    height: 430px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__info {
+    max-width: 600px;
+    &-title {
+      margin-bottom: 25px;
+    }
+  }
+}
+// end design
 
 // start footer
 .footer {
