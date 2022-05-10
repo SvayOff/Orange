@@ -253,6 +253,27 @@
 }
 // end slider
 
+// start subsequence
+.subsequence {
+  &__inner {
+    padding: 200px 0;
+    text-align: center;
+  }
+  &__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+
+    @include f500;
+  }
+  &__text {
+    color: #888;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 30px;
+  }
+}
+// end subsequence
+
 // start footer
 .footer {
   font-size: 16px;
