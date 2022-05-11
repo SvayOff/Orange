@@ -302,6 +302,33 @@
 }
 // end design
 
+// start advantages
+.advantages {
+  background-color: #f8f8f8;
+  &__inner {
+    padding: 200px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    padding-left: 40px;
+    &-icon {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      font-size: 25px;
+      color: $orange;
+    }
+    &-title {
+      font-size: 30px;
+    }
+  }
+}
+// end advantages
+
 // start footer
 .footer {
   font-size: 16px;
