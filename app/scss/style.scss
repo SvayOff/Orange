@@ -295,13 +295,10 @@
   }
   &__info {
     width: 50%;
-    padding: 0 100px 0 15px;
+    padding: 0 170px 0 15px;
   }
   &__title {
     margin-bottom: 25px;
-  }
-  &__text {
-    margin: 0;
   }
   &__image {
     position: relative;
@@ -372,6 +369,128 @@
   }
 }
 // end advantages
+
+// start control
+.control {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 0;
+  }
+  &__info {
+    max-width: 600px;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  &__images img {
+    width: 300px;
+    height: 230px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+// end control
+
+// start team
+.team {
+  &__inner {
+    padding: 200px 0;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__text {
+    max-width: 870px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 420px;
+    width: 100%;
+    overflow: hidden;
+    &-image {
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative;
+      transition: all 0.5s;
+      &::before {
+        content: "";
+        position: absolute;
+        transition: all 0.5s;
+        background-color: rgba($color: #fff, $alpha: 0.7);
+        width: 0;
+        height: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &-social {
+      position: absolute;
+      top: -220px;
+      left: -130px;
+      transform: rotate(-40deg);
+      transition: all 0.5s;
+      li + li {
+        margin-top: 0px;
+      }
+      li {
+        font-size: 22px;
+        &:hover {
+          transform: scale(1.5);
+          a {
+            color: $orange-dark;
+          }
+        }
+      }
+      a {
+        color: orange;
+        transition: all 0.3s;
+      }
+    }
+    &:hover .team__item-image::before {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover .team__item-social {
+      top: 50px;
+      left: 204px;
+      transform: rotate(360deg);
+      transition: all 0.5s;
+      li + li {
+        margin-top: 15px;
+      }
+    }
+    &-name {
+      color: #000;
+      font-size: 22px;
+      @include f500;
+      margin-bottom: 10px;
+      transition: all 0.3s;
+      &:hover {
+        color: $orange;
+      }
+    }
+    &-position {
+      color: #888;
+      cursor: default;
+    }
+  }
+}
+// end team
 
 // start footer
 .footer {
