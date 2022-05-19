@@ -399,6 +399,48 @@
 }
 // end control
 
+// start parallax
+.parallax {
+  &__image {
+    height: 600px;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  &__content {
+    text-align: center;
+    padding-top: 150px;
+  }
+  &__title {
+    font-size: 65px;
+    color: #fff;
+    padding-bottom: 28px;
+  }
+  &__text {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  &__btn {
+    background-color: $orange;
+    color: #fff;
+    @include f500;
+    font-size: 12px;
+    padding: 20px 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #000;
+    }
+  }
+}
+// end parallax
+
 // start team
 .team {
   &__inner {
