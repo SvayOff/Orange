@@ -534,6 +534,78 @@
 }
 // end team
 
+// start news
+.news {
+  &__inner {
+    padding: 200px 0;
+  }
+  &__title {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 430px;
+    &-image {
+      margin-bottom: 20px;
+    }
+    &-image img {
+      width: 100%;
+      height: 300px;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+    &-title {
+      font-size: 24px;
+      @include f500;
+      color: #000;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $orange;
+      }
+    }
+    &-details {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    &-date {
+      color: $orange;
+      margin-right: 15px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $orange-dark;
+      }
+    }
+    &-name {
+      color: #888;
+    }
+    &-about {
+      color: #888;
+      font-size: 21px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &-more {
+      font-size: 13px;
+      color: #000;
+      @include f500;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+// end news
+
 // start footer
 .footer {
   font-size: 16px;
