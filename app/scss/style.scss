@@ -751,6 +751,60 @@
 }
 // end review
 
+// start subscription
+.subscription {
+  &__inner {
+    padding: 200px 0;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    input {
+      max-width: 370px;
+      width: 100%;
+      min-height: 60px;
+      margin-right: 10px;
+      padding: 17px 19px 17px 60px;
+      outline: none;
+      border: none;
+      background-color: #f8f8f8;
+      font-style: italic;
+      border-radius: 3px;
+      transition: 0.3s ease-in-out;
+      font-size: 17px;
+      &::placeholder {
+        color: #888;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.05rem $orange;
+      }
+    }
+    button {
+      padding: 0 20px;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      background-color: $orange;
+      border-radius: 3px;
+      @include f500;
+      font-size: 15px;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
+// end subscription
+
 // start footer
 .footer {
   font-size: 16px;
