@@ -805,6 +805,74 @@
 }
 // end subscription
 
+// start address
+.address {
+  background-color: rgba($color: $orange, $alpha: 1);
+  padding: 200px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  &__info {
+    width: 630px;
+    height: 470px;
+    padding: 40px 50px;
+    background-color: rgba($color: #fff, $alpha: 1);
+  }
+  &__title {
+    color: #000;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 50px;
+      background-color: #000;
+      position: absolute;
+      bottom: -36px;
+      left: 25px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__text {
+    color: $orange;
+    font-size: 19px;
+    margin-left: 40px;
+
+    cursor: default;
+    span {
+      @include f500;
+    }
+    p {
+      position: relative;
+      transition: all 0.3s;
+      &::after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        background-color: $orange;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        transition: all 0.3s;
+      }
+      &:hover {
+        color: $orange-dark;
+        &::after {
+          background-color: $orange-dark;
+        }
+      }
+    }
+  }
+  &__map {
+    padding: 30px 30px 25px;
+  }
+}
+// end address
+
 // start footer
 .footer {
   font-size: 16px;
