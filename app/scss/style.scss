@@ -676,6 +676,81 @@
 }
 // end news
 
+// start review
+.reviews {
+  background-color: #f8f8f8;
+  &__inner {
+    padding: 200px 0;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__slider {
+    text-align: center;
+    position: relative;
+  }
+  &__item {
+    &-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    &-text {
+      color: #888;
+      font-size: 21px;
+      max-width: 865px;
+      margin: 0 auto;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+    &-name {
+      position: relative;
+      font-size: 21px;
+      padding-left: 20px;
+      display: inline-block;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        top: 13px;
+        left: 0;
+        background-color: #000;
+      }
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 110px;
+    color: #c7c7c7;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 20px;
+    transition: all 0.3s;
+    &:hover {
+      color: $orange;
+    }
+  }
+  .slick-prev.slick-arrow {
+    left: 0;
+  }
+  .slick-next.slick-arrow {
+    right: 0;
+  }
+}
+// end review
+
 // start footer
 .footer {
   font-size: 16px;
