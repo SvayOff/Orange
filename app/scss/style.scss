@@ -534,6 +534,76 @@
 }
 // end team
 
+// start gallery
+.gallery {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    a {
+      display: block;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &:hover {
+      .gallery__overley {
+        background-color: rgba($color: $orange, $alpha: 0.8);
+        &::before {
+          width: 3px;
+          height: 40px;
+        }
+        &::after {
+          width: 40px;
+          height: 3px;
+        }
+      }
+    }
+  }
+  &__overley {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-color: rgba($color: $orange, $alpha: 0);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    &::before {
+      content: "";
+      position: inherit;
+      background-color: #fff;
+      width: 0px;
+      height: 0px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+    &::after {
+      content: "";
+      position: inherit;
+      background-color: #fff;
+      width: 0px;
+      height: 0px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+  }
+}
+// end gallery
+
 // start news
 .news {
   &__inner {
