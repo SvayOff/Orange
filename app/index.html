@@ -25,15 +25,20 @@
                             <div class="header__logo-name">Orange</div>
                         </a>
                         <nav class="header__menu">
+                            <div class="header__menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                             <ul class="header__menu-list">
                                 <li class="header__menu-link">
-                                    <a class="active" href="#">Главная</a>
+                                    <a class="tab" href="#" data-active-tab="home">Главная</a>
                                 </li>
                                 <li class="header__menu-link">
-                                    <a href="#">О Нас</a>
+                                    <a class="tab" href="#" data-active-tab="about">О Нас</a>
                                 </li>
                                 <li class="header__menu-link drop-down">
-                                    <a href="#">Услуги</a>
+                                    <a class="tab" href="#" data-active-tab="services">Услуги</a>
                                     <ul class="drop-down__list">
                                         <li>
                                             <a href="#">Описание услуги</a>
@@ -41,7 +46,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__menu-link drop-down">
-                                    <a href="#">Команда</a>
+                                    <a class="tab" href="#" data-active-tab="team">Команда</a>
                                     <ul class="drop-down__list">
                                         <li>
                                             <a href="#">Член команды</a>
@@ -49,7 +54,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__menu-link drop-down">
-                                    <a href="#">Страницы</a>
+                                    <a class="tab" href="#" data-active-tab="pages">Страницы</a>
                                     <ul class="drop-down__list">
                                         <li>
                                             <a href="#">Политика конфиденциальности</a>
@@ -57,7 +62,7 @@
                                     </ul>
                                 </li>
                                 <li class="header__menu-link drop-down">
-                                    <a href="#">Блог</a>
+                                    <a class="tab" href="#" data-active-tab="blog">Блог</a>
                                     <ul class="drop-down__list">
                                         <li>
                                             <a href="#">Публикации</a>
@@ -65,10 +70,10 @@
                                     </ul>
                                 </li>
                                 <li class="header__menu-link">
-                                    <a href="#">Контакты</a>
+                                    <a class="tab" href="#" data-active-tab="contacts">Контакты</a>
                                 </li>
                                 <li class="header__menu-link">
-                                    <a href="#">Блоки</a>
+                                    <a class="tab" href="#">Блоки</a>
                                 </li>
                             </ul>
                         </nav>
@@ -142,8 +147,8 @@
                 </div>
             </section>
 
-            <section class="bootstrap">
 
+            <section class="bootstrap">
                 <div class="bootstrap__content">
                     <div class="container">
                         <div class="bootstrap__info">
@@ -159,8 +164,8 @@
                 <div class="bootstrap__image">
                     <img src="./images/content/bootstrap.jpg" alt="">
                 </div>
-
             </section>
+
 
             <section class="design">
                 <div class="container">
@@ -168,7 +173,7 @@
                         <img class="design__image" src="./images/content/design.jpg" alt="">
                         <div class="design__info">
                             <div class="design__info-title title">
-                                Контент-ориентированный дизайн
+                                Контент - ориентированный дизайн
                             </div>
                             <div class="design__info-text text">
                                 В отличие от многих других шаблонов, Mongo уделяет внимание пользовательскому контенту. Можете быть уверены, что при добавлении собственных текстов и изображений, шаблон будет выглядеть так же круто и привлекательно.
@@ -177,6 +182,8 @@
                     </div>
                 </div>
             </section>
+
+
 
             <section class="advantages">
                 <div class="container">
@@ -224,6 +231,8 @@
                 </div>
             </section>
 
+
+
             <section class="control">
                 <div class="container">
                     <div class="control__inner">
@@ -245,6 +254,8 @@
                 </div>
             </section>
 
+
+
             <section class="parallax">
                 <div class="parallax__image" style="background-image:url(./images/content/parallax_01.jpg)">
                     <div class="parallax__content">
@@ -258,6 +269,8 @@
                     </div>
                 </div>
             </section>
+
+
 
             <section class="team">
                 <div class="container">
@@ -282,12 +295,16 @@
                                         <li><a class="icon-telegram" href="#"></a></li>
                                     </ul>
                                 </div>
-                                <a class="team__item-name" href="#">
-                                    Владислав Кузьмин
-                                </a>
-                                <div class="team__item-position">
-                                    Директор
+                                <div class="team__item-info">
+
+                                    <a class="team__item-name" href="#">
+                                        Владислав Кузьмин
+                                    </a>
+                                    <div class="team__item-position">
+                                        Директор
+                                    </div>
                                 </div>
+
                             </div>
 
                             <div class="team__item">
@@ -302,13 +319,18 @@
                                         <li><a class="icon-telegram" href="#"></a></li>
                                     </ul>
                                 </div>
-                                <a class="team__item-name" href="#">
-                                    Анастасия Островская
-                                </a>
-                                <div class="team__item-position">
-                                    UX - Дизайнер
+                                <div class="team__item-info">
+
+                                    <a class="team__item-name" href="#">
+                                        Анастасия Островская
+                                    </a>
+                                    <div class="team__item-position">
+                                        UX - Дизайнер
+                                    </div>
+
                                 </div>
                             </div>
+
 
                             <div class="team__item">
                                 <div class="team__item-image">
@@ -322,18 +344,23 @@
                                         <li><a class="icon-telegram" href="#"></a></li>
                                     </ul>
                                 </div>
-                                <a class="team__item-name" href="#">
-                                    Дмитрий Савельев
-                                </a>
-                                <div class="team__item-position">
-                                    Маркетолог
-                                </div>
-                            </div>
 
+                                <div class="team__item-info">
+                                    <a class="team__item-name" href="#">
+                                        Дмитрий Савельев
+                                    </a>
+                                    <div class="team__item-position">
+                                        Маркетолог
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+
 
             <section class="gallery">
                 <div class="gallery__inner">
@@ -388,6 +415,8 @@
                     </div>
                 </div>
             </section>
+
+
 
             <section class="news">
                 <div class="container">
@@ -469,6 +498,8 @@
                 </div>
             </section>
 
+
+
             <section class="reviews">
                 <div class="container">
                     <div class="reviews__inner">
@@ -517,6 +548,8 @@
                 </div>
             </section>
 
+
+
             <section class="subscription">
                 <div class="container">
                     <div class="subscription__inner">
@@ -531,6 +564,8 @@
                     </div>
                 </div>
             </section>
+
+
 
             <section class="address">
                 <div class="container">
@@ -547,7 +582,7 @@
                             </div>
                         </div>
                         <div class="address__map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10169.08478574305!2d30.46037088967506!3d50.41741864366742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb682fd037f%3A0x558458ed3ca96388!2sNational%20Scientific%20Center%20%22M.D.%20Strazhesko%20Institute%20of%20Cardiology%22!5e0!3m2!1sru!2sua!4v1653140429390!5m2!1sru!2sua" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10169.08478574305!2d30.46037088967506!3d50.41741864366742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb682fd037f%3A0x558458ed3ca96388!2sNational%20Scientific%20Center%20%22M.D.%20Strazhesko%20Institute%20of%20Cardiology%22!5e0!3m2!1sru!2sua!4v1653140429390!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

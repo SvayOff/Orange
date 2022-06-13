@@ -21,6 +21,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-envelope-o:before {
+  content: "\f003";
+}
 .icon-chevron-left:before {
   content: "\f053";
 }
@@ -30,7 +33,13 @@
 .icon-facebook:before {
   content: "\f09a";
 }
+.icon-facebook-f:before {
+  content: "\f09a";
+}
 .icon-group:before {
+  content: "\f0c0";
+}
+.icon-users:before {
   content: "\f0c0";
 }
 .icon-magic:before {
